@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/87a703f167.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="library">
+    <div class="header">
+
+      <span class="title1"><i class="fa-solid fa-book"></i>Library</span>
+
+      <button id="openModal">Add new book</button>
+
+    </div>
+
+    <div class="sidebar">
+      <div class="title2">Best-selling individual books of all time</div>
+
+      <div> "A Tale of Two Cities" by Charles Dickens </div>
+      <div>"The Little Prince" by Antoine de Saint-Exupéry</div>
+      <div>"The Alchemist" by Paulo Coelho</div>
+      <div>"Harry Potter and the Philosopher`s Stone" by J.k rowling</div>
+      <div>"And Then There Were None" by Agatha Christie</div>
+
+      <div>Source: <a href="https://en.wikipedia.org/wiki/List_of_best-selling_books">wikipedia</a></div>
+
+    </div>
+
+    <div class="content" id="content">
+
+    </div>
+
+  </div>
+  <div class="modal" id="modal">
+    <div class="modal-inner">
+
+      <form action="" method="post">
+        <div>
+          <label for="title">Title</label>
+          <input type="text" id="title" required>
+        </div>
+        <div>
+          <label for="author">Author</label>
+          <input type="text" id="author" required>
+        </div>
+        <div>
+          <label for="pages">Pages</label>
+          <input type="number" id="pages" required>
+        </div>
+
+        <div>
+          <label for="cover">Cover</label>
+          <input type="url" id="cover" required>
+        </div>
+
+        <select name="status" id="status">
+          <legend>Status</legend>
+          <optgroup label="Status">
+          <option value="read">read</option>
+          <option value="not-read">not-read</option>
+          </optgroup>
+        </select>
+        
+        
+    
+
+        <button type="submit"  id="closeModal"> Submit</button>
+        
+      </form>
+
+    
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
