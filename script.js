@@ -6,8 +6,11 @@ const content= document.getElementById("content");
 
 const myLibrary = [];
 
-function Book(information){
-  this.information=information;
+class Book{
+  constructor(information){
+    this.information=information;
+  }
+  
 };
 
 Book.prototype.addBookToLibrary= function(){
